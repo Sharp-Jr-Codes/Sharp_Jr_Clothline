@@ -343,6 +343,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .site-heading h2 {
+  
   display: block;
   font-weight: 700;
   margin-bottom: 10px;
@@ -450,6 +451,7 @@ a, a:hover, a:focus, a:active {
 .item h4 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 900;
+  
 }
 
 .item p {
@@ -475,6 +477,7 @@ a, a:hover, a:focus, a:active {
   position: absolute;
   top: 0;
   transition: all 0.35s ease-in-out;
+  color: red;
 }
 
 .we-offer-area .item:hover::after {
@@ -493,6 +496,13 @@ a, a:hover, a:focus, a:active {
   background-color: #ffffff !important;
   color: black !important;
 }
+
+/* new arrivals start */
+/* .external{
+  font-family: 'Times New Roman', Times, serif;
+} */
+
+/* new arrivals end */
 
 /* Testimonials styles */
 
