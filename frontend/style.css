@@ -503,6 +503,8 @@ a, a:hover, a:focus, a:active {
 
 .testimonials h1 {
   font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  
   text-align: center;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
@@ -519,18 +521,22 @@ a, a:hover, a:focus, a:active {
 }
 
 .testimonials img {
-  width: 4.8em;
-  height: 4.8em;
-  border-radius: 50%;
+  width: 11.8em;
+  height: 9.8em;
+  border-radius: 10%;
 }
 
 .testimonials .name {
-  color: grey;
+ color: black;
+ font-family: 'Times New Roman', Times, serif;
+
 }
 
 .testimonials .desig {
   font-size: 0.7em;
   padding: 0.5em 0;
+  color: black;
+  font-family: 'Times New Roman', Times, serif
 }
 
 .testimonials .share {
