@@ -503,7 +503,46 @@ a, a:hover, a:focus, a:active {
 } */
 
 /* new arrivals end */
+/* CSS for the new-arrival container */
+.new-arrival {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
+/* CSS for the image */
+.arrival-image {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* CSS for the arrival-details */
+.arrival-details {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* CSS for the button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .new-arrival {
+      flex-direction: column;
+  }
+
+  .arrival-details {
+      padding: 10px;
+  }
+}
 /* Testimonials styles */
 
 .testimonials {
