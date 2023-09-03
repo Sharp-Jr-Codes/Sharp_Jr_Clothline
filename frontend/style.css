@@ -889,16 +889,19 @@ a, a:hover, a:focus, a:active {
 .content {
   flex: 1;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .content h1 {
   font-size: 36px;
   margin: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .content p {
   font-size: 18px;
   margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .btn {
@@ -911,10 +914,11 @@ a, a:hover, a:focus, a:active {
   font-weight: bold;
   margin-top: 20px;
   transition: background-color 0.3s, color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .btn:hover {
-  background-color: #007BFF;
+  background-color:black;
   color: #fff;
 }
 
