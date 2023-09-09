@@ -24,8 +24,8 @@ def contact(request):
         from_email=settings.EMAIL_HOST_USER
         connection=mail.get_connection()
         connection.open()
-        email_messge=mail.EmailMessage(f'Email from {fname}',f'Query : {fdesc}\nUser Email : {femail}\nPhone Number : {fphone}',from_email,['aneesurrehman423@gmail.com','belleringunner@gmail.com'],connection=connection)  
-        email_client=mail.EmailMessage('ARK BLog',f'Hello {fname}\nGreetings of the day\n\nThanks For Visiting Our Blog will get back you soon',from_email,[femail],connection=connection)
+        email_messge=mail.EmailMessage(f'Email from {fname}',f'Query : {fdesc}\nUser Email : {femail}\nPhone Number : {fphone}',from_email,['ctrl1root@gmail.com','14payload@gmail.com'],connection=connection)  
+        email_client=mail.EmailMessage('Sharp',f'Hello {fname}\nGreetings of the day\n\nThanks For Visiting us will get back you soon',from_email,[femail],connection=connection)
         connection.send_messages([email_messge,email_client])
         connection.close()
         messages.success(request,"Thanks for Contacting Us")
