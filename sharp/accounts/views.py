@@ -18,13 +18,13 @@ def signup(request):
         confirm_password=request.POST['pass2']
         if password!=confirm_password:
             messages.warning(request,"Password is Not Matching")
-            return render(request,'signup.html')
+            return render(request,'account/signup.html')
 
 
         try:
             if User.objects.get(email=email):
                 messages.warning(request,"Email is Taken")
-                return render(request,'accouts/signup.html')
+                return render(request,'account/signup.html')
 
         except Exception as identifier:
             pass
@@ -34,9 +34,9 @@ def signup(request):
         myuser.last_name=last_name
         myuser.save()
         messages.info(request,"Signup SuccessFull! Please Login ")
-        return redirect('accounts/login')
+        return redirect('/accounts/login')
 
-    return render(request,'signup.html')
+    return render(request,'account/signup.html')
 
 
 
@@ -54,13 +54,13 @@ def handlelogin(request):
 
         else:
             messages.error(request,"Something went wrong")
-            return redirect('/login')
+            return redirect('/accounts/login')
 
-    return render(request,'login.html')    
+    return render(request,'account/login.html')    
 
 
 
 def handlelogout(request):
     logout(request)
     messages.success(request,"Logout Success")
-    return redirect('accounts/login')
+    return redirect('/accounts/login')
