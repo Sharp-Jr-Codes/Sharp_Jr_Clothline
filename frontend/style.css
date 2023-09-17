@@ -662,10 +662,14 @@ a, a:hover, a:focus, a:active {
 .footer .col {
   flex: 1;
   margin-right: 20px;
+  
 }
 
 .footer h4 {
   margin-bottom: 10px;
+}
+.footer p{
+  color: white;
 }
 
 .footer ul {
@@ -723,6 +727,7 @@ a, a:hover, a:focus, a:active {
   max-width: 100%;
   margin: 0 auto;
   margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .newsletter-heading {
@@ -737,6 +742,7 @@ a, a:hover, a:focus, a:active {
   color: #888;
   margin-bottom: 20px;
   font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
 }
 
 .email-input {
@@ -939,3 +945,34 @@ a, a:hover, a:focus, a:active {
   }
 }
 /* open shop ends */
+
+
+/* logout starts */
+.logout-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  margin: 10px 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* logout ends */
