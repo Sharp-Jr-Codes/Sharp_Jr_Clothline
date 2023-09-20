@@ -250,3 +250,45 @@
       transform: translateX(0px);
     }
   } 
+
+  /* login starts */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    color: #333;
+}
+
+.popup p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.popup a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+/* 
+logout ends */
