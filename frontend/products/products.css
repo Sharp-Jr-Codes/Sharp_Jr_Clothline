@@ -2,6 +2,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .title{
+    margin-top: 3.5rem;
     color: black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -15,4 +16,8 @@
 .mb-4{
     font-family: 'Times New Roman', Times, serif;
 }
+.container-fluid{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
