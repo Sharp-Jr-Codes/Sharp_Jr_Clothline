@@ -4,12 +4,104 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+  crossorigin="anonymous"
+/>
   <link href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css" rel="stylesheet" />
   <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" />
+  <link rel="shortcut icon" href="../images/baglogo1.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="products.css" />
-  <title>BAGS</title>
+  <title>Bags</title>
 </head>
 <body>
+  <!-- navigation bar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; top: 0; z-index: 1000; width: 100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><strong>Sharp Jr.</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Best Sellers</strong></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong>Products</strong>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products/tshirt.html">T-SHIRT</a></li>
+              <li><a class="dropdown-item" href="products/hoodies.html">HOODIES</a></li>
+              <li><a class="dropdown-item" href="products/bags.html">BAGS</a></li>
+              <li><a class="dropdown-item" href="products/shoes.html">SHOES</a></li>
+              <li><a class="dropdown-item" href="products/sunglasses.html">SUNGLASSES</a></li>
+              <li><a class="dropdown-item" href="products/tattoo.html">3D-TATTOO ART</a></li>
+              <li><a class="dropdown-item" href="products/swimwear.html">SWIMWEAR</a></li>
+              <li><a class="dropdown-item" href="products/hats.html">HATS</a></li>
+              <!-- Other product links here -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong>Language</strong>
+            </a>
+            <ul class="dropdown-menu">
+
+
+              <li><a class="dropdown-item" href="products/tshirt.html">T-SHIRT</a></li>
+              <li><a class="dropdown-item" href="products/hoodies.html">HOODIES</a></li>
+              <li><a class="dropdown-item" href="products/bags.html">BAGS</a></li>
+              <li><a class="dropdown-item" href="products/shoes.html">SHOES</a></li>
+              <li><a class="dropdown-item" href="products/sunglasses.html">SUNGLASSES</a></li>
+              <li><a class="dropdown-item" href="products/tattoo.html">3D TATTOO</a></li>
+              <li><a class="dropdown-item" href="products/swimwear.html">SWIMWEAR</a></li>
+              <li><a class="dropdown-item" href="products/hats.html">HATS</a></li>
+
+            </ul>
+          </li>
+          
+        </ul>
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Blog</strong></a>
+          </li>
+          <li class="nav-item">
+            <!-- Wishlist allows users to add products they're interested in for future reference. -->
+            <a class="nav-link" href="../frontend/wishlist.html">
+              <i class="far fa-heart"></i> <strong>Wishlist</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../frontend/contact/contact.html"><strong>Contact Us</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../frontend/logins/login.html"><strong>Login</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../frontend/logins/signUp.html"><strong>Sign Up</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+              <i class="fas fa-shopping-cart"></i> <strong>Cart</strong> <span class="badge bg-secondary">5</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!-- navigation bar ends -->
+
+
   
   <div class="container mx-auto mt-10">
     <h1 class="title">BAGS</h1>
@@ -20,7 +112,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>ChicCarry</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -28,17 +120,19 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -46,7 +140,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>StyleTote</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -54,18 +148,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
-              <a href="../checkout/checkout.html"></a>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -73,7 +167,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Huawei Mate 50 Pro 512GB Orange</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><srong>TrendySatch</srong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -81,17 +175,18 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,199.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $200</span>
-            <span class="text-gray-600">Was $1,399.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -99,7 +194,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">iPhone 14 pro Max 256GB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>FashionFlare Bags</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -107,17 +202,18 @@
             <i class="fas fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,199.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $50</span>
-            <span class="text-gray-600">Was $1,249.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <!-- row 1 ends -->
@@ -127,7 +223,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>ElegantClutch</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -135,17 +231,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -153,7 +250,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>UrbanCarry</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -161,17 +258,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -179,7 +277,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>LuxePurse</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -187,17 +285,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -205,7 +304,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>ModaBag</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -213,17 +312,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <!-- row 2 ends -->
@@ -233,7 +333,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>VogueSling</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -241,17 +341,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -259,7 +360,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>ClassyCarry</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -267,17 +368,18 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <div class="w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
@@ -285,7 +387,7 @@
           <a href="#" class="block">
             <img src="https://source.unsplash.com/500x500/?bags" class="w-full object-cover block mx-auto" />
           </a>
-          <a href="#" class="block text-left text-base font-normal mt-2 ml-4">Samsung Z Fold 4 1TB Rose Gold</a>
+          <a href="#" class="block text-left text-base font-normal mt-2 ml-4"><strong>GracefulGrip Bags</strong></a>
           <div class="ml-4 my-2 text-yellow-500">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -293,23 +395,29 @@
             <i class="fal fa-star"></i>
             <i class="fal fa-star"></i>
           </div>
-          <h3 class="font-bold text-left text-3xl mb-1 ml-4">$1,799.00</h3>
+          <h3 class="font-bold text-left text-3xl mb-1 ml-4">Ksh 1,500.00</h3>
           <span class="mb-4">
-            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save $100</span>
-            <span class="text-gray-600">Was $1,899.00</span>
+            <span class="bg-red-600 text-white text-sm font-medium mr-1 ml-4 mb-4 px-2.5 py-0.5 p-1">Save Ksh 500</span>
+            <span class="text-gray-600">Was Ksh 2,000.00</span>
           </span>
           <div class="mx-auto px-4 my-4">
-            <button class="w-full py-2 border-2 border-blue-600 bg-blue-600 text-white rounded mr-2 uppercase hover:text-blue-700 hover:bg-transparent">
+            <button class="w-full py-2 border-2 border-black bg-black text-white rounded mr-2 uppercase hover:text-black hover:bg-transparent">
               <i class="fad fa-shopping-cart mx-1"></i>
               <span class="mr-2">Add to cart</span>
             </button>
           </div>
+          
         </div>
       </div>
       <!-- row 3 ends -->
     </div>
   </div>
 
+
+
+
+  
+ 
   
 </body>
 </html>
